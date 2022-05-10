@@ -77,20 +77,19 @@ public class Orechid extends AMachine implements RecipeDisplayItem {
     }
 
     private static void registerDefaultOres() {
-        registerOre(Material.STONE, Material.COAL_ORE, 3);
-        registerOre(Material.STONE, Material.IRON_ORE, 2);
-        registerOre(Material.STONE, Material.GOLD_ORE, 2);
+        registerOre(Material.STONE, Material.COAL_ORE, 9);
+        registerOre(Material.STONE, Material.IRON_ORE, 4);
+        registerOre(Material.STONE, Material.GOLD_ORE, 4);
         registerOre(Material.STONE, Material.DIAMOND_ORE, 1);
         registerOre(Material.STONE, Material.EMERALD_ORE, 1);
         registerOre(Material.STONE, Material.REDSTONE_ORE, 3);
         registerOre(Material.STONE, Material.LAPIS_ORE, 3);
-        registerOre(Material.STONE, Material.COPPER_ORE, 3);
+        registerOre(Material.STONE, Material.COPPER_ORE, 5);
 
         registerOre(Material.NETHERRACK, Material.NETHER_QUARTZ_ORE, 3);
         registerOre(Material.NETHERRACK, Material.NETHER_GOLD_ORE, 3);
-        registerOre(Material.NETHERRACK, Material.ANCIENT_DEBRIS, 1);
         registerOre(Material.NETHERRACK, Material.BASALT, 5);
-        registerOre(Material.NETHERRACK, Material.BLACKSTONE, 5);
+        registerOre(Material.NETHERRACK, Material.BLACKSTONE, 9);
     }
 
     @Nonnull
