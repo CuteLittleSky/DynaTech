@@ -483,7 +483,7 @@ public class DynaTechItemsSetup {
                 SlimefunItems.HARDENED_METAL_INGOT, SlimefunItems.REINFORCED_PLATE, SlimefunItems.HARDENED_METAL_INGOT
         })
         .setCapacity(16384)
-        .setConsumption(1024)
+        .setConsumption(51200)
         .setProcessingSpeed(1)
         .register(plugin);
                 
