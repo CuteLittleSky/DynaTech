@@ -128,8 +128,6 @@ public class MaterialHive extends AbstractElectricMachine implements Radioactive
 
         materialsAllowed.add("IRON_INGOT");
         materialsAllowed.add("GOLD_INGOT");
-        materialsAllowed.add("NETHERITE_INGOT");
-        materialsAllowed.add("DIAMOND");
         materialsAllowed.add("EMERALD");
         materialsAllowed.add("LAPIS_LAZULI");
         materialsAllowed.add("QUARTZ");
@@ -161,18 +159,14 @@ public class MaterialHive extends AbstractElectricMachine implements Radioactive
         sfItemsAllowed.add("CORINTHIAN_BRONZE_INGOT");
         sfItemsAllowed.add("SOLDER_INGOT");
         sfItemsAllowed.add("DAMASCUS_STEEL_INGOT");
-        sfItemsAllowed.add("HARDENED_METAL_INGOT");
-        sfItemsAllowed.add("REINFORCED_ALLOY_INGOT");
         sfItemsAllowed.add("FERROSILICON");
         sfItemsAllowed.add("GILDED_IRON");
         sfItemsAllowed.add("NICKEL_INGOT");
         sfItemsAllowed.add("COBALT_INGOT");
         sfItemsAllowed.add("REDSTONE_ALLOY"); 
         //Gems
-        sfItemsAllowed.add("SYNTHETIC_DIAMOND");
         sfItemsAllowed.add("SYNTHETIC_EMERALD");
         sfItemsAllowed.add("SYNTHETIC_SAPPHIRE");
-        sfItemsAllowed.add("CARBONADO");
 
         return sfItemsAllowed;
     }
