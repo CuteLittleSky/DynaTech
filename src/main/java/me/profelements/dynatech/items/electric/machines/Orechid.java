@@ -104,18 +104,17 @@ public class Orechid extends AbstractElectricTicker implements RecipeDisplayItem
     }
 
     private static void registerDefaultOres() {
-        registerOre(Material.STONE, Material.COAL_ORE, 3);
-        registerOre(Material.STONE, Material.IRON_ORE, 2);
-        registerOre(Material.STONE, Material.GOLD_ORE, 2);
+        registerOre(Material.STONE, Material.COAL_ORE, 20);
+        registerOre(Material.STONE, Material.IRON_ORE, 15);
+        registerOre(Material.STONE, Material.GOLD_ORE, 15);
         registerOre(Material.STONE, Material.DIAMOND_ORE, 1);
-        registerOre(Material.STONE, Material.EMERALD_ORE, 1);
-        registerOre(Material.STONE, Material.REDSTONE_ORE, 3);
-        registerOre(Material.STONE, Material.LAPIS_ORE, 3);
-        registerOre(Material.STONE, Material.COPPER_ORE, 3);
+        registerOre(Material.STONE, Material.EMERALD_ORE, 9);
+        registerOre(Material.STONE, Material.REDSTONE_ORE, 10);
+        registerOre(Material.STONE, Material.LAPIS_ORE, 15);
+        registerOre(Material.STONE, Material.COPPER_ORE, 15);
 
         registerOre(Material.NETHERRACK, Material.NETHER_QUARTZ_ORE, 3);
         registerOre(Material.NETHERRACK, Material.NETHER_GOLD_ORE, 3);
-        registerOre(Material.NETHERRACK, Material.ANCIENT_DEBRIS, 1);
         registerOre(Material.NETHERRACK, Material.BASALT, 5);
         registerOre(Material.NETHERRACK, Material.BLACKSTONE, 5);
     }
