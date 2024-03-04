@@ -426,7 +426,7 @@ public class DynaTechItems {
         "&f使用电力,让附近的石头/下界岩变成对应的矿石",
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-        LoreBuilderDynamic.power(1024, " 每个方块转换")
+        LoreBuilderDynamic.power(51200, " 每个方块转换")
    );
 
     public static final SlimefunItemStack WIRELESS_ENERGY_POINT = new SlimefunItemStack("WIRELESS_ENERGY_POINT",
