@@ -153,8 +153,8 @@ public class MineralizedApiary extends AbstractElectricMachine {
         ItemStack item = PROGRESS_STACK.clone();
         ItemMeta meta = item.getItemMeta();
 
-        meta.setDisplayName("&f信息");
-        meta.setLore(Arrays.asList("&f蜜蜂数量：" + beeCount, "&f生产速率：" + currSpeed + "秒"));
+        meta.setDisplayName("§f信息");
+        meta.setLore(Arrays.asList("§f蜜蜂数量：" + beeCount, "§f生产速率：" + currSpeed + "秒"));
         item.setItemMeta(meta);
 
         menu.replaceExistingItem(20, item);
