@@ -610,7 +610,7 @@ public class DynaTechItemsSetup {
                     "",
                     LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
                     LoreBuilder.powerBuffer(16384),
-                    LoreBuilderDynamic.powerPerTick(1024)
+                    LoreBuilderDynamic.powerPerTick(5120)
                 );
 
                 new MineralizedApiary(DynaTechItems.DT_HIVES, apiary, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -620,7 +620,7 @@ public class DynaTechItemsSetup {
                     DynaTechItems.MACHINE_SCRAP, DynaTechItems.VEX_GEM, DynaTechItems.MACHINE_SCRAP,
                 }, item.getItem())
                 .setCapacity(16384)
-                .setConsumption(1024)
+                .setConsumption(5120)
                 .setProcessingSpeed(1)
                 .register(plugin);
             }
@@ -638,7 +638,7 @@ public class DynaTechItemsSetup {
                 "",
                 LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
                 LoreBuilder.powerBuffer(16384),
-                LoreBuilderDynamic.powerPerTick(1024)
+                LoreBuilderDynamic.powerPerTick(5120)
             );
 
             new MineralizedApiary(DynaTechItems.DT_HIVES, apiary, RecipeType.ENHANCED_CRAFTING_TABLE,
@@ -648,7 +648,7 @@ public class DynaTechItemsSetup {
                 DynaTechItems.MACHINE_SCRAP, DynaTechItems.VEX_GEM, DynaTechItems.MACHINE_SCRAP,
             }, item)
             .setCapacity(16384)
-            .setConsumption(1024)
+            .setConsumption(5120)
             .setProcessingSpeed(1)
             .register(plugin);
         }
