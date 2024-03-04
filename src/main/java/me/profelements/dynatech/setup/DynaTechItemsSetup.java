@@ -482,7 +482,7 @@ public class DynaTechItemsSetup {
                 SlimefunItems.MAGIC_LUMP_3, new ItemStack(Material.WITHER_ROSE), SlimefunItems.MAGIC_LUMP_3,
                 SlimefunItems.HARDENED_METAL_INGOT, SlimefunItems.REINFORCED_PLATE, SlimefunItems.HARDENED_METAL_INGOT
         })
-        .setCapacity(51200)
+        .setCapacity(1024000)
         .setConsumption(51200)
         .setProcessingSpeed(1)
         .register(plugin);
