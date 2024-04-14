@@ -274,7 +274,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilderDynamic.powerPerSecond(256)
+        LoreBuilderDynamic.powerPerSecond(192)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_END_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_END_MK2",
@@ -286,7 +286,7 @@ public class DynaTechItems {
         THREE_X_PROD_LORE,
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilderDynamic.powerPerSecond(1024)
+        LoreBuilderDynamic.powerPerSecond(768)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_NETHER = new SlimefunItemStack("GROWTH_CHAMBER_NETHER",
@@ -297,7 +297,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilderDynamic.powerPerSecond(256)
+        LoreBuilderDynamic.powerPerSecond(192)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_NETHER_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_NETHER_MK2",
@@ -309,7 +309,7 @@ public class DynaTechItems {
         THREE_X_PROD_LORE,
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilderDynamic.powerPerSecond(1024)
+        LoreBuilderDynamic.powerPerSecond(768)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_OCEAN = new SlimefunItemStack("GROWTH_CHAMBER_OCEAN",
@@ -321,7 +321,7 @@ public class DynaTechItems {
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(1),
-        LoreBuilderDynamic.powerPerSecond(256)
+        LoreBuilderDynamic.powerPerSecond(512)
     );
 
     public static final SlimefunItemStack GROWTH_CHAMBER_OCEAN_MK2 = new SlimefunItemStack("GROWTH_CHAMBER_OCEAN_MK2",
@@ -334,7 +334,7 @@ public class DynaTechItems {
         THREE_X_PROD_LORE,
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
         LoreBuilder.speed(3),
-        LoreBuilderDynamic.powerPerSecond(1024)
+        LoreBuilderDynamic.powerPerSecond(2048)
     );
 
     public static final SlimefunItemStack ANTIGRAVITY_BUBBLE = new SlimefunItemStack("ANTIGRAVITY_BUBBLE",
@@ -344,7 +344,7 @@ public class DynaTechItems {
         "&f可以在周围45格范围内提供创造模式一样的飞行能力",
         "",
         LoreBuilder.machine(MachineTier.END_GAME, MachineType.MACHINE),
-        LoreBuilderDynamic.powerPerSecond(128)
+        LoreBuilderDynamic.powerPerSecond(2560)
     );
 
     public static final SlimefunItemStack WEATHER_CONTROLLER = new SlimefunItemStack("WEATHER_CONTROLLER",
@@ -396,7 +396,7 @@ public class DynaTechItems {
         "&f给附近玩家的物品栏中的所有物品充电",
         "",
         LoreBuilder.machine(MachineTier.MEDIUM, MachineType.MACHINE),
-        LoreBuilderDynamic.powerPerSecond(16)
+        LoreBuilderDynamic.powerPerSecond(32)
     );
 
     public static final SlimefunItemStack SEED_PLUCKER = new SlimefunItemStack("SEED_PLUCKER",
