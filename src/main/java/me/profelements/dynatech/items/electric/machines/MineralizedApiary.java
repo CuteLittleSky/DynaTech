@@ -22,6 +22,7 @@ import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.abstractItems.MachineRecip
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
 import me.mrCookieSlime.Slimefun.api.inventory.BlockMenuPreset;
 import me.profelements.dynatech.items.abstracts.AbstractElectricMachine;
+import net.guizhanss.guizhanlib.minecraft.utils.ChatUtil;
 
 public class MineralizedApiary extends AbstractElectricMachine {
 

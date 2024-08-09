@@ -11,8 +11,14 @@ import me.profelements.dynatech.listeners.ExoticGardenIntegrationListener;
 import me.profelements.dynatech.listeners.GastronomiconIntegrationListener;
 import me.profelements.dynatech.listeners.InventoryFilterListener;
 import me.profelements.dynatech.listeners.PicnicBasketListener;
+import me.profelements.dynatech.listeners.UpgradesListener;
 import me.profelements.dynatech.setup.DynaTechItemsSetup;
+import me.profelements.dynatech.tasks.InventoryFilterTask;
 import me.profelements.dynatech.tasks.ItemBandTask;
+import me.profelements.dynatech.utils.Liquid;
+import me.profelements.dynatech.utils.LiquidRegistry;
+import me.profelements.dynatech.utils.RecipeRegistry;
+
 import net.guizhanss.guizhanlibplugin.updater.GuizhanUpdater;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
@@ -32,6 +38,8 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
     private static DynaTech instance;
     private static boolean exoticGardenInstalled;
     private static boolean infinityExpansionInstalled;
+    private static RecipeRegistry rRegistry;
+    private static LiquidRegistry lRegistry;
 
     private int tickInterval;
 
@@ -46,6 +54,8 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
             return;
         }
 
+        rRegistry = RecipeRegistry.init();
+        lRegistry = LiquidRegistry.init();
         setExoticGardenInstalled(Bukkit.getPluginManager().isPluginEnabled("ExoticGarden"));
         setInfinityExpansionInstalled(Bukkit.getPluginManager().isPluginEnabled("InfinityExpansion"));
 
@@ -60,11 +70,14 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
             worldCreator.generator(new DimensionalHomeDimension());
             worldCreator.createWorld();
         }
+        DynaTechRecipes.registerRecipes(DynaTech.getRecipeRegistry());
+        DynaTechLiquids.registerLiquids(DynaTech.getLiquidRegistry());
 
         DynaTechItemsSetup.setup(this);
         new PicnicBasketListener(this, (PicnicBasket) DynaTechItems.PICNIC_BASKET.getItem());
         new ElectricalStimulatorListener(this, (ElectricalStimulator) DynaTechItems.ELECTRICAL_STIMULATOR.getItem());
-//        new InventoryFilterListener(this);
+        new InventoryFilterListener(this);
+        new UpgradesListener(this);
 
         try {
             Class.forName("io.github.schntgaispock.gastronomicon.api.items.FoodItemStack");
@@ -73,15 +86,14 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
 
         }
 
-
         try {
             Class.forName("io.github.thebusybiscuit.exoticgarden.items.CustomFood");
             new ExoticGardenIntegrationListener(this);
         } catch (ClassNotFoundException ex) {
         }
 
-
-        //Tasks
+        // Tasks
+        getServer().getScheduler().runTaskTimerAsynchronously(DynaTech.getInstance(), new InventoryFilterTask(), 0L, 5 * 20L);
         getServer().getScheduler().runTaskTimerAsynchronously(DynaTech.getInstance(), new ItemBandTask(), 0L, 5 * 20L);
         getServer().getScheduler().runTaskTimer(DynaTech.getInstance(), () -> this.tickInterval++, 0, TICK_TIME);
 
@@ -116,6 +128,16 @@ public class DynaTech extends JavaPlugin implements SlimefunAddon {
     @Nonnull
     public static DynaTech getInstance() {
         return instance;
+    }
+
+    @Nonnull
+    public static RecipeRegistry getRecipeRegistry() {
+        return RecipeRegistry.getInstance();
+    }
+
+    @Nonnull
+    public static LiquidRegistry getLiquidRegistry() {
+        return LiquidRegistry.getInstance();
     }
 
     public int getTickInterval() {
