@@ -736,6 +736,7 @@ public class DynaTechItems {
             "&6水轮发电机",
             "",
             "&f使用水力发电",
+            "&c(备注)已被动力科技弃用,发电为0,非服务器修改",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilderDynamic.powerPerSecond(16));
@@ -745,6 +746,7 @@ public class DynaTechItems {
             "&6水力涡轮发电机",
             "",
             "&f使用水力发电",
+            "&c(备注)已被动力科技弃用,发电为0,非服务器修改",
             "",
             LoreBuilder.machine(MachineTier.MEDIUM, MachineType.GENERATOR),
             LoreBuilderDynamic.powerPerSecond(64));
