@@ -27,7 +27,7 @@ import javax.annotation.Nonnull;
 
 public class Orechid extends AbstractElectricTicker implements RecipeDisplayItem {
 
-    private static final Map<Material, RandomizedSet<ItemStack>> oreMap = new EnumMap<>(Material.class);
+    public static final Map<Material, RandomizedSet<ItemStack>> oreMap = new EnumMap<>(Material.class);
     // private static final List<Material> END_ORES = new ArrayList<>();
 
     private static final Set<BlockFace> ignoredFaces = new HashSet<>();
